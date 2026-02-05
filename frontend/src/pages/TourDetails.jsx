@@ -52,7 +52,7 @@ const TourDetails = () => {
           reviewText,
           rating: tourRating,
         };
-        const response = await fetch(`${BASE_URL}/review/${id}`, {
+        const response = await fetch(`${BASE_URL}/api/review/${id}`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -340,4 +340,5 @@ export default TourDetails;
 // }
 
 // export default TourDetails
+
 
